@@ -3,17 +3,17 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../logic/cubit/counter_cubit.dart';
 
-class SecondScreen extends StatefulWidget {
-  const SecondScreen({super.key, required this.title, required this.color});
+class ThirdScreen extends StatefulWidget {
+  const ThirdScreen({super.key, required this.title, required this.color});
 
   final String title;
   final Color color;
 
   @override
-  State<SecondScreen> createState() => _MyHomePageState();
+  State<ThirdScreen> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<SecondScreen> {
+class _MyHomePageState extends State<ThirdScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

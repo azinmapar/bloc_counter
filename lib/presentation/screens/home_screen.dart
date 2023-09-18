@@ -80,6 +80,7 @@ class _MyHomePageState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 FloatingActionButton(
+                  heroTag: '1',
                   onPressed: () {
                     // # first way of calling the function
                     BlocProvider.of<CounterCubit>(context).decrement();
@@ -88,6 +89,7 @@ class _MyHomePageState extends State<HomeScreen> {
                   child: const Icon(Icons.remove),
                 ),
                 FloatingActionButton(
+                  heroTag: '2',
                   onPressed: () {
                     // # second way of calling the function
                     context.read<CounterCubit>().increment();
@@ -118,6 +120,18 @@ class _MyHomePageState extends State<HomeScreen> {
               color: widget.color,
               child: const Text(
                 'Go to Second Screen',
+              ),
+            ),
+            const SizedBox(
+              height: 24,
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/third');
+              },
+              color: widget.color,
+              child: const Text(
+                'Go to Third Screen',
               ),
             ),
           ],
