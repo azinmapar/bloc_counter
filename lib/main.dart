@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-/* #
+/* # Bloc Concepts
 / # step 1: create a cubit folder and in it two files for state and cubit
 / # step 2: explained in [CounterState] class
 / # step 3: explained in [CounterCubit] class
@@ -141,4 +141,9 @@ class _MyHomePageState extends State<MyHomePage> {
 /* #
 / # tip: buildWhen and listenWhen can make exceptions for building and listening
 / # tip2: there is a multiBloc Listener and provider that they can multiple cubits and blocs
+# */
+
+/* # Testing
+/ # Test folder should be symmetrical to lib folder
+/ # equatable is a package that when comparing two instances it allows to compare what's inside instead of where it is stored that always returns false
 # */
